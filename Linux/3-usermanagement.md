@@ -40,3 +40,34 @@ cat /etc/passwd
 5. **User Info (Comment Field)** – Additional information, such as the full name of the user.  
 6. **Home Directory** – The default directory for the user.  
 7. **Login Shell** – The shell assigned to the user (e.g., `/bin/bash`).  
+
+
+l
+
+
+
+1. Create a Group
+
+groupadd devteam
+
+This creates a group named devteam.
+
+
+---
+
+2. Add a User to the Group Using gpasswd
+
+gpasswd -a username devteam
+
+Replace username with the actual user’s name.
+
+📌 Example:
+
+gpasswd -a sagar devteam
+
+This adds user sagar to the devteam group.
+
+
+
+
+---
